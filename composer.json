@@ -1,5 +1,5 @@
 {
-    "name": "phpsc/pagseguro",
+    "name": "pedroparronchi/pagseguro",
     "description": "Client para integração com API do Pagseguro",
     "type": "library",
     "authors": [
