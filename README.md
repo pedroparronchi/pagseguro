@@ -1,4 +1,4 @@
-# Projeto Descontinuado
+# Projeto Descontinuado - Fork para correções.
 
 ![Atenção](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Dialog-warning-yellow.svg/40px-Dialog-warning-yellow.svg.png)
 
