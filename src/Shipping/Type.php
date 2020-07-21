@@ -37,4 +37,12 @@ class Type
     {
         return in_array($type, static::getTypes());
     }
+
+    /**
+     * @return int
+     */
+    public static function defaultType()
+    {
+        return self::TYPE_UNKNOWN;
+    }
 }

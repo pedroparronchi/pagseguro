@@ -7,6 +7,7 @@ use PHPSC\PagSeguro\Items\Items;
 use PHPSC\PagSeguro\Purchases\Decoder as BaseDecoder;
 use PHPSC\PagSeguro\Shipping\Shipping;
 use SimpleXMLElement;
+use PHPSC\PagSeguro\Shipping\Type;
 
 /**
  * @author Luís Otávio Cobucci Oblonczyk <lcobucci@gmail.com>
@@ -82,7 +83,7 @@ class Decoder extends BaseDecoder
     protected function createShipping(SimpleXMLElement $shipping)
     {
         return new Shipping(
-            (int) $shipping->type,
+            isset($shipping->type) ? (int) $shipping->type : Type::defaultType(),
             isset($shipping->address) ? $this->createAddress($shipping->address) : null,
             isset($shipping->cost) ? (float) $shipping->cost : null
         );
